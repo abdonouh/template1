@@ -1,0 +1,25 @@
+.left-blog{
+    width: 55%;
+    float: left;
+    background: #333;
+    padding: 20px;
+    margin-right: 10px;
+    display: block;
+
+}
+.right-blog{
+    width: 40%;
+    float: right;
+    background: #999;
+    padding: 20px;
+    display: block;
+    margin-left: 10px;
+}
+.blog-post{
+   overflow: hidden;
+}
+.history .bord-bottom{
+    text-align: left;
+    margin: 20px 0;
+    background-color: white;
+}
