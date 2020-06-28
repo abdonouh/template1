@@ -1,0 +1,335 @@
+/* (------------------------------index----------------------------)
+   1- common styles
+   2- General styles
+   3- Section
+
+      3.0 header  ..TRUE..
+      3.1 home div  ..FALSE..
+      3.2 about section  ..FALSE..
+      3.3 Portfolio section ..FALSE..
+      3.4 service  section ..FALSE..
+      3.5 Price section ..FALSE..
+      3.6 Team section ..FALSE..
+      3.7 blog ..FALSE..
+      3.8 content section ..FALSE..
+   4- extra-customaization
+*/
+
+/* 1- common */
+/*
+
+
+   - opacity hover
+   - section header
+   - space between the section (padding)
+   - hover effect 1 ( left to right)
+   - hover effect 2 ( top to bottom)
+   - container for all the page
+
+
+*/
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hover-opacity:hover {
+  opacity: 0.8;
+}
+.hover-opacity {
+  transition: opacity 0.5s ease-in-out;
+}
+.ltr-effect {
+  position: relative;
+}
+
+.pd-y-sec {
+  /* for the sec head  */
+  padding-top: 40px;
+}
+.ltr-effect::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: -1;
+  transition: width 0.5s ease-in-out;
+}
+.ltr-effect:hover::after {
+  position: absolute;
+  width: 100%;
+  color: white;
+}
+/*     2- global styles         */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* css3 style */
+}
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+button {
+  font-family: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: montserrat, sans-serif;
+}
+
+.pd-y {
+  margin: 120px 0;
+}
+a {
+  text-decoration: none;
+}
+span.red {
+  color: #ff1637;
+}
+.border-bottom {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #3a75eb;
+  display: block;
+  margin: 0 auto 70px auto;
+  transition: all 0.5s ease-in-out;
+}
+.bord:hover .border-bottom {
+  width: 70px;
+  background: #ff1637;
+}
+.bord {
+  padding: 10px;
+}
+.section-head {
+  margin: 20px 0;
+  text-align: center;
+}
+.head-section-title {
+  font-size: 35px;
+  text-transform: capitalize;
+}
+/*         3.0 header         */
+.header {
+  position: fixed; /* position fixed and absolute transfer the element from display block to inline-block */
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+.header.sticky {
+  padding: 6px 5px;
+  background: linear-gradient(40deg, #6195ff, #87878746);
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+/* .header-content { */
+/* overflow: hidden; for the float parent problems */
+/* } */
+.header .logo {
+  width: 40%;
+  float: left;
+}
+.header .logo img {
+  padding: 30px 15px;
+  font-size: 30px;
+  width: 40%;
+}
+.header .nav {
+  height: 60%;
+  float: right;
+  list-style: none;
+  text-align: right;
+}
+.header .nav > li {
+  display: inline-block;
+  text-align: center;
+}
+.header .nav > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 30px 15px;
+  display: block;
+  font-size: 15px;
+}
+.header .nav > li > a.active::after,
+.header .nav > li > a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #6195ff;
+  margin-top: 2px;
+  transition: width 0.5s ease-in-out;
+}
+.header .nav > li > a.active::after {
+  width: 100%;
+}
+.header .nav > li > a::after {
+  width: 0;
+}
+.header .nav > li > a:hover::after {
+  width: 100%;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  background: #3a75eb;
+  width: 149px;
+  text-align: center;
+  left: -50%;
+  top: 70%;
+  opacity: 0;
+  visibility: hidden;
+  list-style: none;
+  transition: all 0.5s ease-in-out;
+  border-radius: 3px;
+}
+.dropdown-menu a {
+  color: white;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+.dropdown-menu:hover,
+.dropdown-menu:focus {
+  background: #ff1637;
+}
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.clear {
+  clear: both;
+}
+/* 3.1 home div */
+.home {
+  background-image: url(/assasit/parallax4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+}
+.home-title {
+  font-size: 3.1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.home-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  width: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-desc {
+  color: white;
+  margin: 20px 0;
+  letter-spacing: 2px;
+  line-height: 1.4rem;
+}
+.home .btn {
+  min-width: 160px;
+  padding: 13px 0;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+.home .btn-start {
+  background: #ff1637;
+  margin-right: 10px;
+  color: white;
+}
+.home .btn-learn {
+  background: #3a75eb;
+  color: white;
+}
+
+/* 3.2 about sec */
+.about-content {
+  overflow: hidden;
+}
+.about-item {
+  width: 30%;
+  float: left;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  padding: 30px 50px;
+}
+.about-item.mg {
+  margin: 0 5%;
+}
+
+.about-item-title {
+  font-size: 15px;
+  color: #3a75eb;
+  text-transform: capitalize;
+  transition: color 0.5s ease-in-out;
+}
+.about-item .icon {
+  color: #ff1637;
+  margin-bottom: 10px;
+}
+.about-item-desc {
+  line-height: 1.5;
+  margin: 10px 0;
+  letter-spacing: 1.3px;
+  color: gray;
+  transition: color 0.5s ease-in-out;
+}
+.about-item-link {
+  color: #6195ff;
+  text-transform: capitalize;
+}
+.about-item:hover .about-item-title {
+  color: white;
+}
+.about-item:hover .about-item-desc {
+  color: rgb(202, 199, 199);
+}
+/* 3.3 Portfolio sec */
+.portfolio {
+  background-color: #dddddd;
+}
+.portfolio-content {
+  overflow: hidden;
+}
+.portfolio-item {
+  width: 30%;
+  float: left;
+  padding: 10px;
+  margin-bottom: 5%;
+  display: block;
+
+}
+.portfolio-item img {
+  width: 100%;
+}
+.portfolio-item.mg {
+  margin: 0 5%;
+}
+/* 3.4 service  sec */
+/* 3.5 Price sec */
+/* 3.6 Team sec */
+/* 3.7 blog */
+/* 3.8 content sec */
