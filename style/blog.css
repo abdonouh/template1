@@ -99,14 +99,18 @@ body{
 .left-blog-header{
     margin-bottom: 15px;
 }
+.left-tags-txt{
+    margin-right: 5px;
+}
 .left-blog-tags{
     display: inline-block;
+    margin-bottom: 40px;
 }
 .left-blog-tags span
 {
     display: inline-block;
     padding: 10px;
-    margin: 10px 0 0 0;
+    margin: 0  auto;
 }
 .left-blog-tags h4{
     display: inline-block;
@@ -136,9 +140,42 @@ body{
 .left-profile-content{
     width: 80%;
     float: left;
+    overflow: hidden;
 }
 /* TODO(Abdo_Nouh): work on the left side profile content */
-
+.profile-title{
+margin: 10px 5px;
+text-align: left;
+text-transform: capitalize;
+display: inline-block;
+}
+.profile-icon{
+    float: right;
+    padding: 10px 10px 0 0;
+}
+.profile-icon i {
+    text-align: right; 
+    background-color: #3a75eb;
+    color: #fff;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.profile-desc{
+    color: rgb(122, 116, 116);
+    line-height:1.5;
+    text-align: center;
+}
+/* left comments  */
+.left-comments .section-head{
+    text-align: left!important;
+}
+.left-comments .section-head .border-bottom{
+    margin: 0 0 20px 0!important;
+}
+.left-comments .head-section-title{
+    font-size: 28px!important;
+}
 /* TODO(Mogab_Abeed): write the contant and hover section */
 /* right side  *************************************************************/
 .right-blog input{
