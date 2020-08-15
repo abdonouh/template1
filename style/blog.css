@@ -66,7 +66,7 @@ body{
 }
 .left-blog-img{
     width: 100%;
-    height: 350px;
+    height: 300px;
 }
 .blog-content-title{
     text-align: center;
@@ -77,6 +77,65 @@ body{
     font-size: 25px;
     text-transform: capitalize;
     letter-spacing: 1px;
+}
+/* devide the work with mogab */
+.left-blog-icons{
+    padding: 10px 10px 10px 0;
+    margin-bottom: 20px;
+}
+.left-blog-icons span{
+    margin: 0 10px 0 0;
+}
+.left-blog-icons span i{
+    color: #3a75eb;
+    padding: 0 5px;
+    font-size: inherit - 2;
+}
+.left-blog-desc{
+    line-height: 1.5;
+    color: rgb(122, 116, 116);
+    margin-bottom: 30px;
+}
+.left-blog-header{
+    margin-bottom: 15px;
+}
+.left-blog-tags{
+    display: inline-block;
+}
+.left-blog-tags span
+{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0 0 0;
+}
+.left-blog-tags h4{
+    display: inline-block;
+}
+.left-blog-tags span i{
+    color: #3a75eb;
+}
+.left-tag{
+    background: #ddd;
+    transition: all .3s;
+}
+.left-tag:hover{
+    background:rgb(209, 208, 208)
+}
+/* left profile */
+.left-profile{
+    overflow: hidden;
+}
+.profile-img{
+    width: 20%;
+    float: left;
+    padding: 10px 10px 10px 0;
+}
+.profile-img img{
+    width: 100%;
+}
+.left-profile-content{
+    width: 80%;
+    float: left;
 }
 /* right side  *************************************************************/
 .right-blog input{
