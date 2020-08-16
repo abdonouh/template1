@@ -66,7 +66,7 @@ body{
 }
 .left-blog-img{
     width: 100%;
-    height: 350px;
+    height: 300px;
 }
 .blog-content-title{
     text-align: center;
@@ -78,6 +78,121 @@ body{
     text-transform: capitalize;
     letter-spacing: 1px;
 }
+/* devide the work with mogab */
+.left-blog-icons{
+    padding: 10px 10px 10px 0;
+    margin-bottom: 20px;
+}
+.left-blog-icons span{
+    margin: 0 10px 0 0;
+}
+.left-blog-icons span i{
+    color: #3a75eb;
+    padding: 0 5px;
+    font-size: inherit - 2;
+}
+.left-blog-desc{
+    line-height: 1.5;
+    color: rgb(122, 116, 116);
+    margin-bottom: 30px;
+}
+.left-blog-header{
+    margin-bottom: 15px;
+}
+.left-tags-txt{
+    margin-right: 5px;
+}
+.left-blog-tags{
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.left-blog-tags span
+{
+    display: inline-block;
+    padding: 10px;
+    margin: 0  auto;
+}
+.left-blog-tags h4{
+    display: inline-block;
+}
+.left-blog-tags span i{
+    color: #3a75eb;
+}
+.left-tag{
+    background: #ddd;
+    transition: all .3s;
+}
+.left-tag:hover{
+    background:rgb(209, 208, 208)
+}
+/* left profile */
+.left-profile{
+    overflow: hidden;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.profile-img{
+    width: 20%;
+    float: left;
+    padding: 10px 10px 10px 0;
+}
+.profile-img img{
+    width: 100%;
+}
+.left-profile-content{
+    width: 80%;
+    float: left;
+    overflow: hidden;
+}
+/* TODO(Abdo_Nouh): work on the left side profile content */
+.profile-title{
+margin: 10px 5px;
+text-align: left;
+text-transform: capitalize;
+display: inline-block;
+}
+.profile-icon{
+    float: right;
+    padding: 10px 10px 0 0;
+}
+.profile-icon i {
+    text-align: right; 
+    background-color: #3a75eb;
+    color: #fff;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.profile-desc{
+    color: rgb(122, 116, 116);
+    line-height:1.5;
+    text-align: center;
+}
+/* left comments  */
+.left-comments .section-head{
+    text-align: left!important;
+    padding: 40px 0 15px 0;
+}
+.left-comments .section-head .border-bottom{
+    margin: 0 0 10px 0!important;
+}
+.left-comments .head-section-title{
+    font-size: 28px!important;
+}
+.comment-item{
+    margin: 0 0 20px -60px;
+    float: left;
+}
+.comments-content{
+    border: 1px solid #ddd;
+    padding:10px 10px 10px 80px;
+    overflow: hidden;
+}
+.comment-item .profile-desc{
+    text-align: left!important;
+}
+
+/* TODO(Mogab_Abeed): write the contant and hover section */
 /* right side  *************************************************************/
 .right-blog input{
     border: 0;
